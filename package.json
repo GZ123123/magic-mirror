@@ -1,0 +1,20 @@
+{
+  "name": "test-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "esbuild script.js --bundle --target=es6 --servedir=. --serve --sourcemap --sources-content=true --preserve-symlinks"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/face-landmarks-detection": "0.0.3",
+    "@tensorflow/tfjs-backend-wasm": "^3.13.0",
+    "@tensorflow/tfjs-converter": "^3.13.0",
+    "@tensorflow/tfjs-core": "^3.13.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.20"
+  }
+}
