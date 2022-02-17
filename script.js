@@ -64,25 +64,25 @@ const drawItem = ({
 }) => {
 	let _path = [];
 
-	_path.push(leftEyeIris[0]); // center
-	_path.push(rightEyeIris[0]); // center
+	// _path.push(leftEyeIris[0]); // center
+	// _path.push(rightEyeIris[0]); // center
 
-	_path.push(leftEyebrowLower[0]); // start
-	_path.push(rightEyebrowLower[0]); // end
+	// _path.push(leftEyebrowLower[0]); // start
+	// _path.push(rightEyebrowLower[0]); // end
 
-	_path.push(leftEyebrowUpper[4]); // top start
-	_path.push(rightEyebrowUpper[4]); // top end
+	// _path.push(leftEyebrowUpper[4]); // top start
+	// _path.push(rightEyebrowUpper[4]); // top end
 
-	_path.push(leftEyeLower3[4]); // bottom start
-	_path.push(rightEyeLower3[4]); // bottom end
+	// _path.push(leftEyeLower3[4]); // bottom start
+	// _path.push(rightEyeLower3[4]); // bottom end
 
 	ctx.fillStyle = GREEN;
 
-	_path.forEach((p) => {
-		ctx.beginPath();
-		ctx.arc(p[0], p[1], 5, 0, 2 * Math.PI);
-		ctx.fill();
-	});
+	// _path.forEach((p) => {
+	// 	ctx.beginPath();
+	// 	ctx.arc(p[0], p[1], 5, 0, 2 * Math.PI);
+	// 	ctx.fill();
+	// });
 
 	const width = distance(leftEyebrowLower[0], rightEyebrowLower[0]);
 	const height = distance(leftEyebrowUpper[4], leftEyeLower3[4]);
